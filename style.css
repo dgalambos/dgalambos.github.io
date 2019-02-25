@@ -26,6 +26,15 @@ img {
   left: 0;
 }
 
+.img_gray {
+  position: absolute;
+  filter:grayscale(100%);
+  width: 250px;
+  height: 150px;
+  left: 0;
+}
+
+
 .title {
   position: absolute;
   width: 250px;
