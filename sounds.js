@@ -1,63 +1,86 @@
 function play(name){
+  folder = './sounds/' + name + '/'
   switch(name) {
     case 'andy':
-      fpath = "../sounds/andy/andys_coming.mp3";
+      files = ['andys_coming.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'bahar':
-      fpath = "../sounds/bahar/Bahar.mp3";
+      files = ['Bahar.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'craig':
-      fpath = "../sounds/craig/damn_you_craig.mp3";
+      files = ['damn_you_craig.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'david':
-      fpath = "../sounds/david/david.mp3";
+      files = ['david.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'devon':
-      fpath = "../sounds/devon/none.mp3";
+      files = ['none.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'doron':
-      fpath = "../sounds/doron/doron_attacks_you.mp3";
+      files = ['doron_attacks_you.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'ertu':
-      fpath = "../sounds/ertu/none.mp3";
+      files = ['none.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'gerald':
-      fpath = "../sounds/gerald/come_on_gerald_long.mp3";
+      files = ['come_on_gerald_long.mp3', 'come_on_gerald.mp3', 'yeah_gerald.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'igor':
-      fpath = "../sounds/igor/igor.mp3";
+      files = ['igor.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'joec':
-      fpath = "../sounds/joec/joe_nasty_mood.mp3";
+      files = ['joe_nasty_mood.mp3', 'joe_ready.mp3', 'shh.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'joer':
-      fpath = "../sounds/joer/joe_voicemail.mp3";
+      files = ['joe_voicemail.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'lo':
-      fpath = "../sounds/lo/dammit_lorence.mp3";
+      files = ['dammit_lorence.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'marco':
-      fpath = "../sounds/marco/marco_too_young.mp3";
+      files = ['marco_too_young.mp3', 'marco_my_baby.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'nika':
-      fpath = "../sounds/nika/nika_im_ten.mp3";
+      files = ['hi_im_nika.mp3', 'nika_im_ten.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'phil':
-      fpath = "../sounds/phil/you_betrayed_me_phil.mp3";
+      files = ['you_betrayed_me_phil.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'todd':
-      fpath = "../sounds/todd/damn_todd.mp3";
+      files = ['todd_x3.mp3', 'damn_todd.mp3']
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'tricia':
-      fpath = "../sounds/tricia/tricia_walk_off.mp3";
+      files = 'tricia_walk_off.mp3';
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'zk':
-      fpath = "../sounds/zk/zk_jr.mp3";
+      files = ['zk_jr.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
       break;
     default:
-      fpath = "../sounds/error/error.mp3";
+      fpath = './sounds/error/error.mp3';
       break;
   }
-    var audio = new Audio(fpath);
+  var audio = new Audio(fpath);
   audio.play();
+}
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
 }
