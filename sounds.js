@@ -66,7 +66,7 @@ function play(name){
       fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'tricia':
-      files = 'tricia_walk_off.mp3';
+      files = ['tricia_walk_off.mp3'];
       fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'zk':
