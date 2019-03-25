@@ -23,7 +23,7 @@ function play(name){
       fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'devon':
-      files = ['none.mp3'];
+      files = ['devon_no_limits.mp3'];
       fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'doron':
