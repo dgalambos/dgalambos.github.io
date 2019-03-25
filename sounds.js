@@ -14,7 +14,7 @@ function play(name){
       fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'david':
-      files = ['david.mp3'];
+      files = ['david.mp3', 'what_are_you_thinking_about.mp3'];
       fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'devon':
