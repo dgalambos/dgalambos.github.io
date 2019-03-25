@@ -1,6 +1,6 @@
 function play(name){
   folder = './sounds/' + name + '/'
-  
+
   switch(name) {
     case 'andy':
       files = ['andys_coming.mp3'];
@@ -14,6 +14,10 @@ function play(name){
       files = ['damn_you_craig.mp3'];
       fpath = folder+files[getRandomInt(files.length)];
       break;
+    case 'dan':
+      files = ['spencer_bros.mp3', 'way_to_go_dan.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
+      break;
     case 'david':
       files = ['david.mp3', 'what_are_you_thinking_about.mp3'];
       fpath = folder+files[getRandomInt(files.length)];
@@ -24,6 +28,10 @@ function play(name){
       break;
     case 'doron':
       files = ['doron_attacks_you.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
+      break;
+    case 'drew':
+      files = ['spencer_bros.mp3', 'drew_the_farm_kid.mp3'];
       fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'ertu':
