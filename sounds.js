@@ -15,7 +15,7 @@ function play(name){
       fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'dan':
-      files = ['spencer_bros.mp3', 'way_to_go_dan.mp3'];
+      files = ['spencer_bros.mp3', 'way_to_go_dan.mp3', 'way_to_go_dan.mp3', 'way_to_go_dan.mp3'];
       fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'david':
@@ -31,7 +31,7 @@ function play(name){
       fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'drew':
-      files = ['spencer_bros.mp3', 'drew_the_farm_kid.mp3'];
+      files = ['spencer_bros.mp3', 'drew_the_farm_kid.mp3', 'drew_the_farm_kid.mp3', 'drew_the_farm_kid.mp3'];
       fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'ertu':
@@ -47,7 +47,7 @@ function play(name){
       fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'joec':
-      files = ['joe_nasty_mood.mp3', 'joe_ready.mp3', 'shh.mp3'];
+      files = ['joe_nasty_mood.mp3', 'joe_ready.mp3', 'shh.mp3', 'shh.mp3'];
       fpath = folder+files[getRandomInt(files.length)];
       break;
     case 'joer':
@@ -82,6 +82,35 @@ function play(name){
       files = ['zk_jr.mp3'];
       fpath = folder+files[getRandomInt(files.length)];
       break;
+    case 'gabi':
+      files = ['hey_guys_its_gabi.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
+      break;
+    case 'hailey':
+      files = ['hailey_game_winner.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
+      break;
+    case 'lance':
+      files = ['lance_full_fledge.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
+      break;
+    case 'matthieu':
+      files = ['je_mappelle_matthieu.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
+      break;
+    case 'rich':
+      files = ['hey_richard.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
+      break;
+    case 'shannon':
+      files = ['shannon_dublin.mp3', 'shannon_pizza.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
+      break;
+    case 'sophia':
+      files = ['sophia_social_robot.mp3'];
+      fpath = folder+files[getRandomInt(files.length)];
+      break;
+      
     default:
       fpath = './sounds/error/error.mp3';
       break;
